@@ -26,4 +26,4 @@ eureka:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.service-registry.credentials.uri:http://127.0.0.1:8762}/eureka/
+      defaultZone: ${vcap.services.discovery-service.credentials.uri:http://127.0.0.1:8762}/eureka/
